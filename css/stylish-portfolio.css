@@ -30,8 +30,8 @@ body {
 }
 .loader {
   color: #CA6159;
-  font-size: 10px;
-  margin: 100px auto;
+  font-size: 30px;
+  margin: auto auto;
   position: relative;
   text-indent: -9999em;
   -webkit-transform: translateZ(0);
