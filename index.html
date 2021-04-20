@@ -34,6 +34,8 @@
 
 <body id="page-top">
 
+  <div class="loader">Loading...</div>
+
   <!-- Header -->
   <header class="masthead d-flex">
     <div class="container text-center my-auto">
@@ -48,7 +50,7 @@
       <div class="row">
         <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
-            <a class="js-scroll-trigger" href="#tipos"><i class="fas fa-receipt"></i></a>
+            <a class="js-scroll-trigger" href="#tipos"><i class="fas fa-birthday-cake"></i></a>
           </span>
           <h4>
             <strong class="text-seconder">Tipos de Tortas</strong>
@@ -64,7 +66,7 @@
         </div>
         <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
-            <a class="js-scroll-trigger" href="#catalogo"><i class="fas fa-birthday-cake"></i></a>
+            <a class="js-scroll-trigger" href="#catalogo"><i class="fas fa-receipt"></i></a>
           </span>
           <h4>
             <strong class="text-seconder">Catálogo</strong>
@@ -119,7 +121,7 @@
       <div class="row align-items-center">
         <div class="col-12">
           <div class="mt-5 p-3 text-right letrasgrandes">
-            <h2 class="cursiva">Tipos de Ponque</h2>
+            <h2 class="cursiva">Tipos de Ponqué</h2>
             <ul class="pl-3 text-right tipos">
               <li>Chocolate</li>
               <li>Vainilla</li>
@@ -642,15 +644,15 @@
                 <td colspan="4">1.2$</td>
               </tr>
               <tr>
-                <td colspan="8">Drip de Chocolate o Chocolate blanco</td>
+                <td colspan="8">Drip de Chocolate o Chocolate Blanco</td>
                 <td colspan="4">Desde 0.8$</td>
               </tr>
               <tr>
-                <td colspan="8">Chocolates pequeños importados (6 und)</td>
+                <td colspan="8">Chocolates Pequeños Importados (6 und)</td>
                 <td colspan="4">1$</td>
               </tr>
               <tr>
-                <td colspan="8">Barras de chocolate (3 und)</td>
+                <td colspan="8">Barras de Chocolate (3 und)</td>
                 <td colspan="4">1$</td>
               </tr>
             </tbody>
@@ -1141,7 +1143,7 @@
               <div class="project-text w-100 my-auto text-lg-left">
                 <h3 class="text-white text-center mb-3 cursiva">Babycakes</h3>
                 <div class="mb-0 text-white">
-                  <p>Puede escoger cualquier modelo que deseé.</p>
+                  <p>Puede escoger cualquier modelo que desee.</p>
                 </div>
               </div>
             </div>
@@ -1158,7 +1160,7 @@
               <div class="project-text w-100 my-auto text-lg-left">
                 <h3 class="text-white text-center mb-3 cursiva">Combo Fiestero</h3>
                 <div class="mb-0 text-white">
-                  <p>Minicake de 22cm (10 a 15 porciones) + 12 Cupcakes con topper + 1 Glup.</p>
+                  <p>Minicake de 22cm (10 a 15 porciones) + 12 Cupcakes con Topper + 1 Glup.</p>
                   <h1 class="text-center">25$</h1>
                 </div>
               </div>
@@ -1173,7 +1175,7 @@
           <div class="bg-secondary h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-lg-left">
-                <h3 class="text-white text-center mb-3 cursiva">Proximámente</h3>
+                <h3 class="text-white text-center mb-3 cursiva">Proximamente</h3>
                 <div class="mb-0 text-white">
                   <p>Se empezará a tomar pedidos para realizar tortas decoradas en Fondant.</p>
                 </div>
@@ -1249,6 +1251,17 @@
   <!-- animaciones -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="js/aos.js"></script>
+  <script type="text/javascript">
+    (function($){
+      'use strict';
+        $(window).on('load', function () {
+            if ($(".loader").length > 0)
+            {
+                $(".loader").fadeOut("slow");
+            }
+        });
+    })(jQuery)
+  </script>
   <script type="text/javascript">
     AOS.init({
       offset: 120, // offset (in px) from the original trigger point
