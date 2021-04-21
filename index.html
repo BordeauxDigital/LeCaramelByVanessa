@@ -35,8 +35,9 @@
 <body id="page-top">
 
   <div class="loader-wrapper">
-    <div class="loader">Loading...</div>
+    <span class="loader"><span class="loader-inner"></span></span>
   </div>
+
   <!-- Header -->
   <header class="masthead d-flex">
     <div class="container text-center my-auto">
@@ -663,6 +664,7 @@
     </div>
   </section>
 
+
   <hr id="catalogo">
 
   <!-- Portfolio -->
@@ -1253,15 +1255,9 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="js/aos.js"></script>
   <script type="text/javascript">
-    (function($){
-      'use strict';
-        $(window).on('load', function () {
-            if ($(".loader").length > 0)
-            {
-                $(".loader").fadeOut("slow");
-            }
+    $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
         });
-    })(jQuery)
   </script>
   <script type="text/javascript">
     AOS.init({
